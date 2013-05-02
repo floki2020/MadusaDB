@@ -1,6 +1,6 @@
-## xuncache
+## MadusaDB
 ========
-xuncache 是免费开源的NOSQL(内存数据库) 采用golang开发,简单易用而且 功能强大(就算新手也完全胜任)、性能卓越能轻松处理海量数据,可用于缓存系统.
+MadusaDB 是免费开源的NOSQL(内存数据库) 采用golang开发,简单易用而且 功能强大(就算新手也完全胜任)、性能卓越能轻松处理海量数据,可用于缓存系统.
 
 目前版本 version 0.3
 
@@ -95,5 +95,6 @@ version 1.0版本前 作者不推荐用于生产环境
 
 ## 关于
 - by [孙彦欣](http://weibo.com/sun8911879)
+- by [Alex](https://github.com/cocoa-alex/)
 -    [更新日志](https://github.com/sun8911879/xuncache/blob/master/UPDATE.md)
 - LICENSE: under the [BSD](https://github.com/sun8911879/xuncache/blob/master/LICENSE-BSD.md) License
