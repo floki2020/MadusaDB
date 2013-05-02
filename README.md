@@ -1,12 +1,10 @@
 ## MadusaDB
 ========
-MadusaDB（原xuncache） 是免费开源的NOSQL(内存数据库) 采用golang开发,简单易用而且 功能强大(就算新手也完全胜任)、性能卓越能轻松处理海量数据,可用于缓存系统.
+MadusaDB（原xuncache） 是免费开源的NOSQL(内存数据库) 采用golang开发,简单易用而且 功能强大(就算新手也完全胜任)、性能卓越能轻松处理海量数据,可用于缓存系统.采用json协议 socket通信 后期打算用bson
 
-前期它是活跃的 更新很迅速
+PS:version 1.0版本前 作者不推荐用于生产环境
 
-version 1.0版本前 作者不推荐用于生产环境
 
-采用json协议 socket通信 --后期打算用bson
 ## 版本
 ========
 version 0.3
