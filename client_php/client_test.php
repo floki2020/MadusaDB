@@ -1,58 +1,58 @@
 <?php
-    include "xuncache.class.php";
+    include "MadusaDB.class.php";
 
-    $xuncache = new xuncache();
+    $MadusaDB = new MadusaDB();
     //字符串类型操作
 
         //添加数据
-        $string = $xuncache->key("xuncache")->add("xuncache");
+        $string = $MadusaDB->key("MadusaDB")->add("MadusaDB");
         dump($string);
         //bool(true)
 
         //查找数据
-        $string = $xuncache->key("xuncache")->find();
+        $string = $MadusaDB->key("MadusaDB")->find();
         dump($string);
-        //string(8) "xuncache"
+        //string(8) "MadusaDB"
 
         //删除数据
-        $status = $xuncache->key("xuncache")->del();
+        $status = $MadusaDB->key("MadusaDB")->del();
         dump($status);
         //bool(true)
 
     //数组操作(仅支持二位数组)
 
-        $array['name']    =  "xuncache";
+        $array['name']    =  "MadusaDB";
         $array['version'] =  "beta";
         //增加数组
-        $status = $xuncache->key("array")->zadd($array);
+        $status = $MadusaDB->key("array")->zadd($array);
         dump($status);
         //bool(true)
 
         //查找数组
-        $array = $xuncache->key("array")->zfind();
+        $array = $MadusaDB->key("array")->zfind();
         dump($array);
         /*  array(2) {
-        *      ["name"] => string(8) "xuncache"
+        *      ["name"] => string(8) "MadusaDB"
         *      ["version"] => string(3) "beta"
         *  }
         */
 
         //删除数组
-        $status = $xuncache->key("array")->zdel();
+        $status = $MadusaDB->key("array")->zdel();
         dump($status);
         //bool(true)
 
     //计数器操作
 
         //数字递增
-        $int = $xuncache->incr("xuncache_num");
+        $int = $MadusaDB->incr("Madusa_num");
         dump($int);
         
         //数字递减
-        $int = $xuncache->decr("xuncache_num");
+        $int = $MadusaDB->decr("Madusa_num");
         dump($int);
-    //获取xuncache信息
-        $info = $xuncache->info();
+    //获取MadusaDB信息
+        $info = $MadusaDB->info();
         dump($info);
         
         /*
